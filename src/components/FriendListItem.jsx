@@ -1,13 +1,18 @@
+
+import { Frienditem } from "./FriedList.styled"
+import { Avatar, Name } from "./FriedList.styled"
+
 export const FriendListItem = ({ friends: {avatar, name, isOnline} }) => {
     return (
-        <li>
+        <Frienditem>
             <span>{isOnline}</span>
-    <img  src={avatar} alt="User avatar" width="48" />
-            <p>{name}</p>
-        </li>
+    <Avatar  src={avatar} alt="User avatar" width="48" />
+            <Name>{name}</Name>
+        </Frienditem>
         
     )
 }
+
 
 
 /* <li class="item">

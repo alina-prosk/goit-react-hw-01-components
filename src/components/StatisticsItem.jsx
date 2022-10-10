@@ -1,8 +1,11 @@
-export const StatisticsItem = ({stats}) => {
+import { Statitem } from "./Statistics.styled"
+import { Label, Quantity } from "./Profile.styled";
+export const StatisticsItem = ({ stats: {id, label, percentage} }) => {
     return (
-        <li key={stats.id}>
-                    <span>{stats.label}</span>
-                    <span>{stats.percentage}</span>
-                </li>
+        <Statitem key={id}>
+                    <Label>{label}</Label>
+                    <Quantity>{percentage}</Quantity>
+                </Statitem>
     )
 }
+

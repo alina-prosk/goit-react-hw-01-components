@@ -1,20 +1,25 @@
 import { TransactionHistoryItem } from "./TransactionHistoryItem";
+import { Table, Tbody, Thead, Th, Tr } from "./Transaction.styled";
+import { Profiled } from './Profile.styled'
+
 export const TransactionsHistory = ({ items }) => {
     return (
-        <table>
-            <thead>
-                <tr>
-                    <th>Type</th>
-                    <th>Amount</th>
-                    <th>Currency</th>
-                </tr>
-            </thead>
-            <tbody>
+        <Profiled>
+        <Table>
+            <Thead>
+                <Tr>
+                    <Th>Type</Th>
+                    <Th>Amount</Th>
+                    <Th>Currency</Th>
+                </Tr>
+            </Thead>
+            <Tbody>
                 {items.map(item => (
                     <TransactionHistoryItem key={item.id} item={item} />
                 ))}
-            </tbody>
-        </table>
+            </Tbody>
+            </Table>
+            </Profiled>
     );
 };
 
