@@ -1,27 +1,27 @@
+import { Profiled, Avatar, Name, Taglocation, Stats, Label, Quantity, Statsitem } from "./Profile.styled";
 
 export const Profile = ({ user: { username, tag, location, avatar, stats } }) => {
     return (
-        <div>
-            <img src={avatar} alt="User avatar" width="100" />
-            <p>{username}</p>
-            <p>{tag}</p>
-            <p>{location}</p>
-            <ul>
-                <li>
-                    <span>Followers </span>
-                    <span>{stats.followers}</span>
-                </li>
-                 <li>
-                    <span>Views </span>
-                    <span>{stats.views}</span>
-                </li>
-                 <li>
-                    <span>Likes </span>
-                    <span>{ stats.likes}</span>
-                </li>
-            </ul>
-
-</div>
+        <Profiled>
+            <Avatar src={avatar} alt="User avatar" width="100" />
+            <Name>{username}</Name>
+            <Taglocation>{tag}</Taglocation>
+            <Taglocation>{location}</Taglocation>
+            <Stats>
+                <Statsitem>
+                    <Label>Followers </Label>
+                    <Quantity>{stats.followers}</Quantity>
+                </Statsitem>
+                <Statsitem>
+                    <Label>Views </Label>
+                    <Quantity>{stats.views}</Quantity>
+                </Statsitem>
+                <Statsitem>
+                    <Label>Likes </Label>
+                    <Quantity>{ stats.likes}</Quantity>
+                </Statsitem>
+            </Stats>
+</Profiled>
     );
 
 };
