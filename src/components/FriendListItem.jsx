@@ -1,11 +1,11 @@
 
-import { Frienditem } from "./FriedList.styled"
-import { Avatar, Name } from "./FriedList.styled"
+import {Frienditem, Avatar, Name, Status} from "./FriedList.styled"
+import PropTypes from 'prop-types';
 
-export const FriendListItem = ({ friends: {avatar, name, isOnline} }) => {
+export const FriendListItem = ({ friends: { avatar, name, isOnline} }) => {
     return (
         <Frienditem>
-            <span>{isOnline}</span>
+    <Status isOnline={isOnline}></Status>
     <Avatar  src={avatar} alt="User avatar" width="48" />
             <Name>{name}</Name>
         </Frienditem>
@@ -13,7 +13,16 @@ export const FriendListItem = ({ friends: {avatar, name, isOnline} }) => {
     )
 }
 
-
+FriendListItem.propTypes = {
+    friends: PropTypes.arrayOf(
+        PropTypes.shape({
+        avatar: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+        isOnline: PropTypes.bool.isRequired,
+        id: PropTypes.number.isRequired,
+        })
+    ),
+};
 
 /* <li class="item">
   <span class="status"></span>
