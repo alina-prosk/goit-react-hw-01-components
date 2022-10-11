@@ -23,9 +23,7 @@ export const Profile = ({ user: { username, tag, location, avatar, stats } }) =>
             </Stats>
 </Profiled>
     );
-
 };
-
 
 
 

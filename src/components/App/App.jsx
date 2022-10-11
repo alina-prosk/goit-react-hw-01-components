@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+
 import { Profile } from "../Profile";
 import { Statistics } from '../Statistics';
 import { FriendList } from '../FriendList';
@@ -24,9 +24,4 @@ export const App = () => {
 
 
 
-Profile.PropTypes = {
-    username: PropTypes.string,
-    tag: PropTypes.string,
-    location: PropTypes.string,
-    avatar: PropTypes.string,
-}
+

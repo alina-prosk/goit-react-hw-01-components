@@ -22,3 +22,15 @@ margin: 0px 10px;
 export const Name = styled.p`
 margin: 0px 10px;
 `
+
+const UserOnline = props => {
+    return props.isOnline ? 'green' : 'red';
+};
+
+export const Status = styled.span`
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: ${UserOnline};
+    margin-right: 8px;
+`;

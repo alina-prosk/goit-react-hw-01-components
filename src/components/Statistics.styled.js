@@ -1,8 +1,9 @@
 import styled from '@emotion/styled'
 
 export const StatSection = styled.section`
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
 `;
 export const StatTitle = styled.h2`
   font-size: 24px;
@@ -19,6 +20,7 @@ export const StatList = styled.ul`
   padding: 0;
   margin-left: auto;
   margin-right: auto;
+  background-color: #F5F5F5;
 `;
 const colorPicker = i => {
   const colors = ['#FF5733', '#FFBD33', '#DBFF33', '#75FF33', '#33FF57'];

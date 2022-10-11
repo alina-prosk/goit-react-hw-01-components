@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 
 export const Container = styled.div`
-margin-left: 160px;
+margin-left: 460px;
 margin-top: 32px;
 padding: 32px;
 background-color: #F5F4FA;
