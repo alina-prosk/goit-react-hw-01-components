@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/github.com/alina-prosk/react/static/css/main.7acaea2f.css",
-    "main.js": "/github.com/alina-prosk/react/static/js/main.0bc86fa9.js",
+    "main.js": "/github.com/alina-prosk/react/static/js/main.d10591c4.js",
     "index.html": "/github.com/alina-prosk/react/index.html",
     "main.7acaea2f.css.map": "/github.com/alina-prosk/react/static/css/main.7acaea2f.css.map",
-    "main.0bc86fa9.js.map": "/github.com/alina-prosk/react/static/js/main.0bc86fa9.js.map"
+    "main.d10591c4.js.map": "/github.com/alina-prosk/react/static/js/main.d10591c4.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.0bc86fa9.js"
+    "static/js/main.d10591c4.js"
   ]
 }
